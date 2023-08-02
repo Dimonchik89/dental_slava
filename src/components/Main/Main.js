@@ -14,7 +14,7 @@ const Main = () => {
                         animate={"visible"}
                         variants={textVariant}
                         transition={textTransitionFirst}
-                        className="title"
+                        className="title text-center"
                     >
                         Pomagamy tworzyć piękne uśmiechy
                     </motion.h1>
