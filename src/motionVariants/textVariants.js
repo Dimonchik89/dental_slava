@@ -41,6 +41,6 @@ export const textTransitionFirst = {
 export const textTransitionSecond = {
     ease: "easeInOut",
     type: "spring",
-    delay: .3,
+    delay: .7,
     duration: .7
 }

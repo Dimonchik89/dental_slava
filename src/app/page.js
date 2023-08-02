@@ -29,6 +29,7 @@ export default function Home() {
           buttonAnimation={buttonVariantRightToLeft}
           buttonTitle={"Czytaj więcej"}
           buttonPath="/works"
+          customMargin={""}
         />
       </Variant>
       <Variant>
@@ -39,6 +40,7 @@ export default function Home() {
           buttonAnimation={buttonVariantLeftToRight}
           buttonTitle={"Czytaj więcej"}
           buttonPath="/works"
+          customMargin={"ml-auto"}
         />
         <VariantImage 
           image={secondImg}
@@ -57,6 +59,7 @@ export default function Home() {
           buttonAnimation={buttonVariantRightToLeft}
           buttonTitle={"Czytaj więcej"}
           buttonPath="/works"
+          customMargin={""}
         />
       </Variant>
       <Variant>
@@ -67,6 +70,7 @@ export default function Home() {
           buttonAnimation={buttonVariantLeftToRight}
           buttonTitle={"Czytaj więcej"}
           buttonPath="/works"
+          customMargin={"ml-auto"}
         />
         <VariantImage 
           image={fourthImg}

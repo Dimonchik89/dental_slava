@@ -37,7 +37,7 @@ export const imageVariantRightToLeft = {
 }
 
 export const imageTransition = {
-    delay: .5,
+    delay: .7,
     duration: .5,
     type: "just",
     ease: "easeInOut"

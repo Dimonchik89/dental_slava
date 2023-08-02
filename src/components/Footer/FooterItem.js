@@ -17,7 +17,7 @@ const FooterItem = ({footerItem, index}) => {
             transition={{
                 ease: "easeInOut",
                 type: "spring",
-                delay: .3 * index,
+                delay: .7 * index,
                 duration: .7
             }}
             className="flex flex-col items-center"

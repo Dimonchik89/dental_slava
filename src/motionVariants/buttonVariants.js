@@ -36,5 +36,5 @@ export const buttonTransition = {
     type: "spring",
     ease: "easeInOut",
     duration: .7,
-    delay: .3
+    delay: .7
 }

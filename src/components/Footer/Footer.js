@@ -39,21 +39,6 @@ const Footer = () => {
                     <div className="border-t-2 border-amber-300">
                         <div className="grid gap-y-5 grid-cols-1 lg:grid-cols-3 pt-10">
                             {content}
-                            {/* <div className="flex flex-col items-center">
-                                <h3 className="text-gray-light text-base font-semibold">Adres:</h3>
-                                <p className="text-gray-light text-base">ul. Brata Zenona Żebrowskiego 4 lok.III</p>
-                                <p className="text-gray-light text-base">07-410 Ostrołęka</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-gray-light text-base font-semibold">Telefon:</h3>
-                                <p className="text-yellow text-base cursor-pointer hover:text-gray-light ease duration-300">+48 530 194 763</p>
-                                <p className="text-yellow text-base cursor-pointer hover:text-gray-light ease duration-300">+48 668 243 010</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-gray-light text-base font-semibold">E-mail:</h3>
-                                <p href="mailto:dima.music1989@gmail.com" className="text-yellow text-base cursor-pointer hover:text-gray-light ease duration-300">goldlab.kontakt@gmail.com</p>
-                            </div> */}
-
                         </div>
                     </div>
                 </div>

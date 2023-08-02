@@ -1,9 +1,3 @@
-import { Button } from "@mui/material";
-import Image from "next/image";
-import CustomButton from "../CustomButton/CustomButton";
-import VariantImage from "./VariantImage";
-import VariantContent from "./VariantContent";
-
 const Variant = ({children}) => {
 
     return (

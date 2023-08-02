@@ -13,6 +13,6 @@ export const advantageVariant = {
 export const advantagetransition = {
     ease: "easeInOut",
     type: "spring",
-    delay: .3,
+    delay: .7,
     duration: .7
 }
