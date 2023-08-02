@@ -68,7 +68,7 @@ const Advantages = () => {
                                 transition={{
                                     ease: "easeInOut",
                                     type: "spring",
-                                    delay: .7 * i,
+                                    delay: .5 * i,
                                     duration: .7
                                 }}
                             >
