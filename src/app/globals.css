@@ -58,8 +58,8 @@ body {
 }
 
 .MuiPaper-root {
-    background-color: #161616;
-    box-shadow: 2px 0px 10px #a5a5a5;
+    background-color: #161616 !important;
+    box-shadow: 2px 0px 10px #a5a5a5 !important;
     /* display: flex;
     align-items: center; */
 }
