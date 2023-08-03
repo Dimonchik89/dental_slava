@@ -14,7 +14,7 @@ import Advantages from "@/components/Advantages/Advantages";
 
 export default function Home() {
   return (
-    <main className="mt-[106px] bg-black ">
+    <main className="mt-[106px] bg-black flex-auto">
       <Main/>
       <Laboratory/>
       <Variant>

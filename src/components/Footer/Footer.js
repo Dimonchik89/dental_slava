@@ -34,10 +34,10 @@ const Footer = () => {
 
     return (
         <div>
-            <div className="pb-10 bg-gray">
+            <div className="pb-5 lg:pb-10 bg-gray">
                 <div className="container mx-auto">
                     <div className="border-t-2 border-amber-300">
-                        <div className="grid gap-y-5 grid-cols-1 lg:grid-cols-3 pt-10">
+                        <div className="grid gap-y-5 grid-cols-1 lg:grid-cols-3 pt-5 lg:pt-10">
                             {content}
                         </div>
                     </div>
