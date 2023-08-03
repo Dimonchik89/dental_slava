@@ -29,11 +29,15 @@ const footerItems = [
 const Footer = () => {
 
     const content = footerItems.map((item, i) => (
-        <FooterItem key={item.text} footerItem={item} index={i}/>
+        <FooterItem 
+            key={item.text} 
+            footerItem={item} 
+            index={i}
+        />
     ))
 
     return (
-        <div>
+        <footer>
             <div className="pb-5 lg:pb-10 bg-gray">
                 <div className="container mx-auto">
                     <div className="border-t-2 border-amber-300">
@@ -43,9 +47,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="py-10 bg-black"></div>
-            {/* <div className="py-10 bg-gray"></div> */}
-        </div>
+            {/* <div className="py-10 bg-black"></div> */}
+        </footer>
     )
 }
 export default Footer;

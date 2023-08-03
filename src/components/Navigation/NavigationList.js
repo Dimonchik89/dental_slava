@@ -19,11 +19,11 @@ export const navLinks = [
         link: "/services",
         Icon: HomeRepairServiceIcon
     },
-    {
-        label: "Our work",
-        link: "/works",
-        Icon: CollectionsIcon
-    },
+    // {
+    //     label: "Our work",
+    //     link: "/works",
+    //     Icon: CollectionsIcon
+    // },
     {
         label: "Price",
         link: "/price",

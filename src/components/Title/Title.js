@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useAnimate } from "@/hooks/useAnimate";
 import { useRef } from "react";
-import { textVariant, textTransitionSecond, textTransitionThird } from "@/motionVariants/textVariants";
+import { textVariant, textTransitionTitle } from "@/motionVariants/textVariants";
 
 const Title = ({title}) => {
     const ref = useRef(null)
@@ -17,7 +17,7 @@ const Title = ({title}) => {
                 initial={"hidden"}
                 animate={controls}
                 variants={textVariant}
-                transition={textTransitionThird}
+                transition={textTransitionTitle}
                 className="title text-center"
             >
                 {title}
