@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="py-10 bg-black"></div> */}
+            <div className="py-10 bg-black"></div>
         </footer>
     )
 }
