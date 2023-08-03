@@ -17,7 +17,7 @@ const AboutContentPhoto = () => {
             animate={controls}
             variants={imageScale}
             transition={{
-                delay: .5,
+                delay: .7,
                 duration: 1,
                 type: "spring",
             }}

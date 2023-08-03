@@ -20,7 +20,7 @@ const AboutContentText = () => {
                 transition={{
                     ease: "easeInOut",
                     type: "spring",
-                    delay: .5,
+                    delay: .7,
                     duration: .7
                 }}
                 className="mb-3 text-sm md:text-base"
@@ -34,7 +34,7 @@ const AboutContentText = () => {
                 transition={{
                     ease: "easeInOut",
                     type: "spring",
-                    delay: .5 * 2,
+                    delay: .7 * 2,
                     duration: .7
                 }}
                 className="text-sm md:text-base"

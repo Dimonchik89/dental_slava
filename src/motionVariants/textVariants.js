@@ -44,3 +44,10 @@ export const textTransitionSecond = {
     delay: .7,
     duration: .7
 }
+
+export const textTransitionThird = {
+    ease: "easeInOut",
+    type: "spring",
+    delay: .4,
+    duration: .7
+}

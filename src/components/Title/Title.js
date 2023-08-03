@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import { useAnimate } from "@/hooks/useAnimate";
 import { useRef } from "react";
-import { textVariant, textTransitionSecond } from "@/motionVariants/textVariants";
+import { textVariant, textTransitionSecond, textTransitionThird } from "@/motionVariants/textVariants";
 
-const AboutTitle = () => {
+const Title = ({title}) => {
     const ref = useRef(null)
     const { controls } = useAnimate(ref)
 
@@ -17,12 +17,12 @@ const AboutTitle = () => {
                 initial={"hidden"}
                 animate={controls}
                 variants={textVariant}
-                transition={textTransitionSecond}
+                transition={textTransitionThird}
                 className="title text-center"
             >
-                Informacje o laboratorium GoldLab w Ostrołęce
+                {title}
             </motion.h1>
         </div>
     )
 }
-export default AboutTitle;
+export default Title;
