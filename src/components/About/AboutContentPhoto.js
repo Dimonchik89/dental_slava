@@ -1,24 +1,18 @@
-"use client"
 import image from "../../images/main/about_img.jpg"
 import Image from "next/image";
 import { motion } from "framer-motion"
-import { useAnimate } from "@/hooks/useAnimate";
-import { useRef } from "react";
-import { imageScale, imageTransition } from "../../motionVariants/imageVariants";
+import { imageScale } from "../../motionVariants/imageVariants";
 
-const AboutContentPhoto = () => {
-    const ref = useRef(null)
-    const { controls } = useAnimate(ref)
+const AboutContentPhoto = ({animateCb}) => {
 
     return (
         <motion.div 
-            ref={ref}
             initial={"hidden"}
-            animate={controls}
+            animate={animateCb}
             variants={imageScale}
             transition={{
                 delay: .7,
-                duration: 1,
+                duration: .7,
                 type: "spring",
             }}
             className="text-white"

@@ -58,3 +58,10 @@ export const contentTextVariant = {
     delay: 1,
     duration: .7
 }
+
+export const aboutSubtitleVariant = {
+    ease: "easeInOut",
+    type: "spring",
+    delay: 2.1,
+    duration: .7
+}

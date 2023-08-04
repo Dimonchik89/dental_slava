@@ -1,22 +1,16 @@
-"use client"
-import { useRef } from "react";
 import { motion } from "framer-motion";
-import { useAnimate } from "@/hooks/useAnimate";
-import { textVariant, textTransitionSecond } from "@/motionVariants/textVariants"
+import { textVariant, aboutSubtitleVariant } from "@/motionVariants/textVariants"
 
 
-const AboutContentSubtitle = () => {
-    const ref = useRef(null)
-    const { controls } = useAnimate(ref)
+const AboutContentSubtitle = ({animateCb}) => {
 
     return (
         <>
             <motion.h1 
-                ref={ref}
                 initial={"hidden"}
-                animate={controls}
+                animate={animateCb}
                 variants={textVariant}
-                transition={textTransitionSecond}
+                transition={aboutSubtitleVariant}
                 className="text-2xl lg:text-3xl text-yellow font-semibold text-center"
             >
                 Co nas wyróżnia?

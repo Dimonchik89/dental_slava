@@ -1,21 +1,15 @@
-"use client"
-import { useRef } from "react"
 import { motion } from "framer-motion"
-import { useAnimate } from "@/hooks/useAnimate"
 import { textVariant } from "@/motionVariants/textVariants"
 
-const AboutContentText = () => {
-    const ref = useRef(null)
-    const { controls } = useAnimate(ref)
+const AboutContentText = ({animateCb}) => {
 
     return (
         <div 
-            ref={ref}
             className="text-white text-base flex flex-col justify-center"
         >
             <motion.p 
                 initial={"hidden"}
-                animate={controls}
+                animate={animateCb}
                 variants={textVariant}
                 transition={{
                     ease: "easeInOut",
@@ -29,7 +23,7 @@ const AboutContentText = () => {
             </motion.p>
             <motion.p
                 initial={"hidden"}
-                animate={controls}
+                animate={animateCb}
                 variants={textVariant}
                 transition={{
                     ease: "easeInOut",
