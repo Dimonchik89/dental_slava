@@ -2,8 +2,8 @@
 
 import NavigationList from "../Navigation/NavigationList";
 import HeaderLogo from "./HeaderLogo";
-import { AnimatePresence, motion, useAnimation, useInView } from "framer-motion"
-import { useRef, useEffect, useState } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion"
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
     const ref = useRef(null)

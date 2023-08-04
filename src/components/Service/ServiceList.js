@@ -12,32 +12,32 @@ import { useRef } from "react";
 
 const arrCard = [
     {
-        title: "Вініри",
+        title: "Вініри1",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental9
     },
     {
-        title: "Вініри",
+        title: "Вініри2",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental10
     },
     {
-        title: "Вініри",
+        title: "Вініри3",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental11
     },
     {
-        title: "Вініри",
+        title: "Вініри4",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental12
     },
     {
-        title: "Вініри",
+        title: "Вініри5",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental13
     },
     {
-        title: "Вініри",
+        title: "Вініри6",
         text: "Прес-кераміка E.max, LiSi Press, Livento Press.",
         image: dental14
     }

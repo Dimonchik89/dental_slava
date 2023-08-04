@@ -7,32 +7,32 @@ import AdvantageTitle from "./AdvantagesTitle"
 
 const argsArr = [
     {
-        title: "Technology",
+        title: "Technology1",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 1
     },
     {
-        title: "Technology",
+        title: "Technology2",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 2
     },
     {
-        title: "Technology",
+        title: "Technology3",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 3
     },
     {
-        title: "Technology",
+        title: "Technology4",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 4
     },
     {
-        title: "Technology",
+        title: "Technology5",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 5
     },
     {
-        title: "Technology",
+        title: "Technology6",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ut sint ipsa ea voluptatibus, sapiente non molestiae voluptas numquam minima a hic quia, totam suscipit!",
         number: 6
     },

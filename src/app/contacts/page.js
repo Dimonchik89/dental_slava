@@ -26,7 +26,7 @@ const Contacts = () => {
                 <Title title={"Contacts"}/>
                 <div className="my-10">
                     <div className="grid grid-cols-2">
-                        <div>
+                        {/* <div>
                             {
                                 isLoaded ? 
                                 <GoogleMap
@@ -38,7 +38,7 @@ const Contacts = () => {
                                 </GoogleMap> :
                                 <h2>Loading...</h2>
                             }
-                        </div>
+                        </div> */}
                         <div>
                             <h1 className="text-gray-light">lalala</h1>
                         </div>
