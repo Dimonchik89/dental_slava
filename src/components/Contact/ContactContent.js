@@ -30,7 +30,7 @@ const ContactContent = ({animateCb}) => {
                         type: "just",
                         ease: "easeInOut"
                     }}
-                    className="text-yellow text-base lg:text-xl"
+                    className="text-yellow text-base lg:text-xl text-center"
                 >
                     ul. Brata Zenona Żebrowskiego 4 lok.III
                     07-410 Ostrołęka
