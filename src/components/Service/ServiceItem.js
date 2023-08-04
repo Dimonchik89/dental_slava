@@ -13,7 +13,7 @@ const ServiceItem = ({card, callback, animateCb, index}) => {
             transition={{
                 ease: "easeInOut",
                 type: "spring",
-                delay: index === 0 ? .7 : .7 * (index + 1),
+                delay: index === 0 ? .5 : .3 * (index + 1),
                 duration: .7
             }}
             className="flex flex-col items-center"

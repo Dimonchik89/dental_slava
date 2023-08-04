@@ -1,47 +1,25 @@
 "use client"
 import Title from "@/components/Title/Title";
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
-import { useMemo } from "react";
-
-const containerStyle = {
-    width: '100%',
-    height: '400px'
-};
+import ContactImage from "@/components/Contact/ContactImage";
+import ContactContent from "@/components/Contact/ContactContent";
+import { useRef } from "react";
+import { useAnimate } from "@/hooks/useAnimate";
 
 const Contacts = () => {
-    const key = 'AIzaSyDRX0D21tjCpNmpABQp8bnfNyA99pscQrM'    
-    const { isLoaded } = useLoadScript({
-        // googleMapsApiKey: key
-    })
-
-    const center = useMemo(() => ({
-        lat: -3.745,
-        lng: -38.523
-    }), [])
-
+    const ref = useRef(null)
+    const { controls } = useAnimate(ref)
 
     return (
         <div className="mt-[106px] bg-gray flex-auto">
             <div className="container mx-auto">
                 <Title title={"Contacts"}/>
                 <div className="my-10">
-                    <div className="grid grid-cols-2">
-                        {/* <div>
-                            {
-                                isLoaded ? 
-                                <GoogleMap
-                                    zoom={10}
-                                    center={center}
-                                    mapContainerStyle={containerStyle}
-                                >
-                                    <Marker position={center}/>
-                                </GoogleMap> :
-                                <h2>Loading...</h2>
-                            }
-                        </div> */}
-                        <div>
-                            <h1 className="text-gray-light">lalala</h1>
-                        </div>
+                    <div 
+                        ref={ref}
+                        className="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-y-5 lg:gap-x-5"
+                    >
+                        <ContactImage animateCb={controls}/>
+                        <ContactContent animateCb={controls}/>
                     </div>
                 </div>
             </div>
