@@ -1,26 +1,18 @@
 "use client"
 import { textTransitionSecond, textVariant } from "@/motionVariants/textVariants";
-import { Box } from "@mui/material";
-import { motion, useAnimation, useInView } from 'framer-motion';
-import { useRef, useEffect } from "react";
+import { motion } from 'framer-motion';
+import { useRef } from "react";
 import CustomButton from "../CustomButton/CustomButton";
 import { buttonVariant } from "@/motionVariants/buttonVariants";
+import { useAnimate } from "@/hooks/useAnimate";
 
 const LaboratoryInfo = () => {
     const ref = useRef(null)
-    const controls = useAnimation()
-    const isInView = useInView(ref)
-
-    useEffect(() => {
-        if(isInView) {
-            controls.start("visible")
-        }
-    }, [controls, isInView])
+    const { controls } = useAnimate(ref)
 
     return (
-        <Box className="mt-10">
+        <div ref={ref} className="mt-10">
             <motion.p 
-                ref={ref}
                 className="text-gray-light text-center text-base md:text-xl"
                 initial={"hidden"}
                 animate={controls}
@@ -33,8 +25,9 @@ const LaboratoryInfo = () => {
                 title={"Czytaj więcej"} 
                 path="/about"
                 animationVariant={buttonVariant}
+                animateCb={controls}
             />
-        </Box>
+        </div>
     )
 }
 export default LaboratoryInfo;

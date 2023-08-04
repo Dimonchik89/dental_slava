@@ -1,22 +1,15 @@
 "use client"
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { useRef } from "react";
-import { buttonTransition } from "@/motionVariants/buttonVariants";
-import { useAnimate } from "@/hooks/useAnimate";
+import { variantButtonTransition } from "@/motionVariants/buttonVariants";
 
-const CustomButton = ({title, path, animationVariant}) => {
-    const router = useRouter()
-    const ref = useRef(null)
-    const { controls } = useAnimate(ref)
+const CustomButton = ({title, path, animationVariant, animateCb}) => {
 
     return (
         <motion.div 
             initial={"hidden"}
-            animate={controls}
+            animate={animateCb}
             variants={animationVariant}
-            transition={buttonTransition}
-            ref={ref}
+            transition={variantButtonTransition}
             className="text-center mt-8"
         >
             <button

@@ -51,3 +51,10 @@ export const textTransitionTitle = {
     delay: .4,
     duration: .7
 }
+
+export const contentTextVariant = {
+    ease: "easeInOut",
+    type: "spring",
+    delay: 1,
+    duration: .7
+}

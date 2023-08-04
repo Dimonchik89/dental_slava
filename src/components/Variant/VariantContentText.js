@@ -1,20 +1,15 @@
 "use client"
 import { motion } from "framer-motion";
-import { useAnimate } from "@/hooks/useAnimate";
-import { useRef } from "react";
-import { textTransitionSecond } from "@/motionVariants/textVariants";
+import { textTransitionSecond, contentTextVariant } from "@/motionVariants/textVariants";
 
-const VariantContextText = ({text, animationVariant}) => {
-    const ref = useRef(null)
-    const { controls } = useAnimate(ref)
+const VariantContextText = ({text, animationVariant, controls}) => {
 
     return (
         <motion.p
-            ref={ref}
             initial={"hidden"}
             animate={controls}
             variants={animationVariant}
-            transition={textTransitionSecond}
+            transition={contentTextVariant}
             className="text-xl text-gray-light text-center"
         >
             {text}

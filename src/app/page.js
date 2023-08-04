@@ -7,7 +7,7 @@ import thirdImg from "../images/main/dental7.webp";
 import fourthImg from "../images/main/dental8.webp";
 import VariantImage from "@/components/Variant/VariantImage";
 import VariantContent from "@/components/Variant/VariantContent";
-import { imageVariantLeftToRight, imageVariantRightToLeft } from "@/motionVariants/imageVariants";
+import { imageScale } from "@/motionVariants/imageVariants";
 import { textVariantRightToLeft, textVariantLeftToRight } from '@/motionVariants/textVariants';
 import { buttonVariantLeftToRight, buttonVariantRightToLeft } from '../motionVariants/buttonVariants';
 import Advantages from "@/components/Advantages/Advantages";
@@ -20,7 +20,7 @@ export default function Home() {
       <Variant>
         <VariantImage 
           image={firstImg}
-          animationVariant={imageVariantLeftToRight}
+          animationVariant={imageScale}
         />
         <VariantContent 
           title={"Prace kompozytowe"} 
@@ -44,13 +44,13 @@ export default function Home() {
         />
         <VariantImage 
           image={secondImg}
-          animationVariant={imageVariantRightToLeft}  
+          animationVariant={imageScale}  
         />
       </Variant>
       <Variant>
         <VariantImage 
           image={thirdImg}
-          animationVariant={imageVariantLeftToRight}
+          animationVariant={imageScale}
         />
         <VariantContent 
           title={"Projekty wax-up"} 
@@ -74,7 +74,7 @@ export default function Home() {
         />
         <VariantImage 
           image={fourthImg}
-          animationVariant={imageVariantRightToLeft}  
+          animationVariant={imageScale}  
         />
       </Variant>
       <Advantages/>

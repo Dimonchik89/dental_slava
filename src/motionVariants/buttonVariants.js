@@ -45,3 +45,10 @@ export const buttonTransitionFastStart = {
     duration: .4,
     delay: .7
 }
+
+export const variantButtonTransition = {
+    ease: "easeInOut",
+    type: "spring",
+    delay: 1.3,
+    duration: .7
+}
